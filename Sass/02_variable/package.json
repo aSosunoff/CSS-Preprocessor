@@ -1,0 +1,16 @@
+{
+  "name": "Sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+	"build": "./node_modules/.bin/sass src:dist",
+	"build_w": "./node_modules/.bin/sass --watch src:dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.24.4"
+  }
+}
