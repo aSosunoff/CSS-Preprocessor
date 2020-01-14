@@ -1,0 +1,17 @@
+@mixin common-style($name) {
+	-webkit-#{$name}: none; 
+    -moz-#{$name}: none;   
+    -ms-#{$name}: none;
+    #{$name}: none;
+}
+.noselect {
+	@include common-style(user-select);
+}
+
+@mixin input-placeholder {
+	&.placeholder { @content; }
+	&:-moz-placeholder { @content; }
+	&::-moz-placeholder { @content; }
+	&:-ms-input-placeholder { @content; }
+	&::-webkit-input-placeholder { @content; }
+}

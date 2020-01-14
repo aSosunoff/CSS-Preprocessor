@@ -1,5 +1,9 @@
+/*reset*/
 @import 'reset';
+/*_reset*/
+@import 'common-style';
 @import 'global-variable';
+
 
 body{
 	font: 100% Helvetica, sans-serif;
@@ -9,4 +13,16 @@ body{
 
 div{
 	background-color: $man-variable-color;
+}
+
+// input, textarea {
+// 	@include input-placeholder {
+// 		color: $grey;
+//   	}
+// }
+
+input{
+	@include input-placeholder{
+		color: $grey;
+	};
 }
