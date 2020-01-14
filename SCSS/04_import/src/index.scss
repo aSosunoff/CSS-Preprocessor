@@ -1,0 +1,12 @@
+@import 'reset';
+@import 'global-variable';
+
+body{
+	font: 100% Helvetica, sans-serif;
+	color: $man-variable-color;
+	background-color: $man-variable-color;
+}
+
+div{
+	background-color: $man-variable-color;
+}

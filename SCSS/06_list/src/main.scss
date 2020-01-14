@@ -1,0 +1,10 @@
+$index: 3;
+$width-body: nth(10px 100% 1fr, $index);
+
+head{
+	width: 1px;
+}
+
+body{
+	width: $width-body;
+}
