@@ -1,0 +1,34 @@
+.sizing(@prop){
+	-webkit-box-sizing: @prop;
+	-moz-box-sizing: @prop;
+	box-sizing: @prop;
+}
+// --------
+*{
+	padding: 0;
+	margin: 0;
+	.sizing(border-box);
+}
+
+body{
+	background-color: #472665;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+	display: grid;
+	grid-template-columns: 100px repeat(2, 1fr) 100px;
+	grid-template-rows: 100px repeat(2, 1fr);
+
+	max-width: 1170px;
+	margin: 50px auto;
+	border: 5px solid #8545bf;
+	font-size: 20px;
+	color: aliceblue;
+	text-align: center;
+}
+
+.item{
+	border: 1px solid #be76ff;
+	padding: 10px 0;
+}
